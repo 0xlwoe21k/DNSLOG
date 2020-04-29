@@ -1,0 +1,2 @@
+# DNSLOG
+轻量级DNSLOG
