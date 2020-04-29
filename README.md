@@ -15,7 +15,7 @@ server {
     listen       80;
     access_log  /var/log/nginx/host.access.log  main;
     location / {
-        root   /root/dnslog/dnslog;   
+        root   /root/dnslog/dnslog;   		#更改为你自己前端所在的目录 
         index  index.html index.htm;
     }
 	    location  /api/ {
@@ -24,7 +24,6 @@ server {
 	}
 ```
 
-更改其中的 location ->  为你前端所在的目录
 
 #### 3.运行GDNSLOG
 
