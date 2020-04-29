@@ -65,7 +65,7 @@ web.dnslog.pub 用于访问平台web
 
 ping命令测试一下
 
-```ping dnslogtest.dns.dnslog.mobi``` 
+```ping dnslogtest.dns.dnslog.pub``` 
 
 如下图所示：
 
