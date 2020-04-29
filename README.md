@@ -53,7 +53,7 @@ fi
 
 > 配置A记录，子域名ns，解析到10.10.10.10 
 
-> 配置NS记录，子域名dns，解析到ns.dnslog.com 
+> 配置NS记录，子域名dns，解析到ns.dnslog.pub 
 
 > 配置A记录，子域名web，解析到10.10.10.10 
 
