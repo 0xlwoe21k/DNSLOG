@@ -69,5 +69,7 @@ ping命令测试一下
 
 如下图所示：
 
-![avatar](http://baidu.com/pic/doge.png
-![avatar](http://baidu.com/pic/doge.png
+![avatar](https://github.com/joke0jie/DNSLOG/blob/master/test.jpg)
+
+![avatar](https://github.com/joke0jie/DNSLOG/blob/master/1588132140768.jpg)
+
