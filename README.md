@@ -1,2 +1,40 @@
-# DNSLOG
-轻量级DNSLOG
+##部署
+**环境准备**
+> redis
+> nginx
+
+
+####1.安装redis
+
+####2.安装nginx
+**nginx 配置**
+```
+	server {
+    listen       80;
+    access_log  /var/log/nginx/host.access.log  main;
+    location / {
+        root   /root/dnslog/dnslog;   
+        index  index.html index.htm;
+    }
+	    location  /api/ {
+	        proxy_pass http://127.0.0.1:443/;  #配置GDNSLOG的转发端口一般默认就行了
+	    	}
+	}
+```
+
+更改其中的 location ->  为你前端所在的目录
+
+####3.运行GDNSLOG
+可以使用定时任务轮循
+```#!/bin/bash
+
+COUNT=$(ps -ef |grep zookeeper |grep -v "grep" |wc -l)
+echo $COUNT
+if [ $COUNT -eq 0 ]; then
+        cd /root/dnslog
+        ./GDNslog_linux
+        cd /usr/local/bin
+        ./redis-server
+else
+        echo not run
+fi```
