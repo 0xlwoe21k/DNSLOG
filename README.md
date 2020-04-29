@@ -4,6 +4,7 @@
 
 > nginx
 
+[下载DNSLOG前端和后端程序](https://github.com/joke0jie/DNSLOG/releases)
 
 #### 1.安装redis
 
