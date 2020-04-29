@@ -1,15 +1,16 @@
-##部署
+## 部署
 **环境准备**
 > redis
+
 > nginx
 
 
-####1.安装redis
+#### 1.安装redis
 
-####2.安装nginx
+#### 2.安装nginx
 **nginx 配置**
 ```
-	server {
+server {
     listen       80;
     access_log  /var/log/nginx/host.access.log  main;
     location / {
@@ -24,11 +25,17 @@
 
 更改其中的 location ->  为你前端所在的目录
 
-####3.运行GDNSLOG
+#### 3.运行GDNSLOG
+
 可以使用定时任务轮循
+
+```crontab -e```
+
+```30 * * * * /bin/bash /root/damon.sh```
+
 ```#!/bin/bash
 
-COUNT=$(ps -ef |grep zookeeper |grep -v "grep" |wc -l)
+COUNT=$(ps -ef |grep GDNslog_linux |grep -v "grep" |wc -l)
 echo $COUNT
 if [ $COUNT -eq 0 ]; then
         cd /root/dnslog
@@ -38,3 +45,5 @@ if [ $COUNT -eq 0 ]; then
 else
         echo not run
 fi```
+
+
