@@ -76,8 +76,16 @@ ping命令测试一下
 
 ![avatar](https://github.com/joke0jie/DNSLOG/blob/master/dis.png)
 
+#### 2.1 API接口使用
+
+```
+http://web.dnslog.mobi:443/v1/dnslog?token={yourtoken}&key=1588152736960
+首次登录请修改你的token
+```
+
+**示例结果**
+
+```{"id":26211,"time":"2020-04-29 17:32:17","type":1,"name":"1588152736960.dns.dnslog.pub","raddr":"183.194.223.102:56261"}```
 
 
-## 3.To do list
-目前有API查询接口，但是token是固定的,后续增加一个改token的功能。
 
