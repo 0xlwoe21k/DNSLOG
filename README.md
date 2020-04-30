@@ -85,7 +85,7 @@ http://web.dnslog.mobi:443/v1/dnslog?token={yourtoken}&key=1588152736960
 
 **示例结果**
 
-```{"id":26211,"time":"2020-04-29 17:32:17","type":1,"name":"1588152736960.dns.dnslog.pub","raddr":"183.194.223.102:56261"}```
+```{"id":26211,"time":"2020-04-29 17:32:17","type":1,"name":"1588152736960.dns.dnslog.pub","raddr":"183.xx.xx.102:56261"}```
 
 
 
