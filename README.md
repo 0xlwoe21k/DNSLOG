@@ -49,7 +49,7 @@ fi
 
 **1.5.域名解析**
 
-假设根域名是dnslog.pub，服务器IP是10.10.10.10进行以下配置
+假设根域名是dnslog.pub，服务器IP是10.10.10.10进行以下配置(建议使用华为云做域名解析，TTL可以设置成100，其它的一般是600)
 
 > 配置A记录，子域名ns，解析到10.10.10.10 
 
@@ -63,13 +63,21 @@ web.dnslog.pub 用于访问平台web
 
 假如前面的都已经配置好了。
 
+**默认用户名密码:admin/dnslog**
+
 ping命令测试一下
 
 ```ping dnslogtest.dns.dnslog.pub``` 
+
 
 如下图所示：
 
 ![avatar](https://github.com/joke0jie/DNSLOG/blob/master/test.png)
 
 ![avatar](https://github.com/joke0jie/DNSLOG/blob/master/dis.png)
+
+
+
+## 3.To do list
+目前有API查询接口，但是token是固定的,后续增加一个改token的功能。
 
